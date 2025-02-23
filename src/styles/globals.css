@@ -41,8 +41,59 @@ main {
 }
 
 .tiles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tiles h2 {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #222;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.logistique-container, .tracabilite-container, .production-container, .mediation-container, .sav-container, .dons-container, .stocks-container, .bilans-container {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.logistique-container {
+  background-color: #ffebee;
+}
+
+.tracabilite-container {
+  background-color: #fce4ec;
+}
+
+.production-container {
+  background-color: #f3e5f5;
+}
+
+.mediation-container {
+  background-color: #ede7f6;
+}
+
+.sav-container {
+  background-color: #e8eaf6;
+}
+
+.dons-container {
+  background-color: #e3f2fd;
+}
+
+.stocks-container {
+  background-color: #e0f7fa;
+}
+
+.bilans-container {
+  background-color: #e0f2f1;
+}
+
+.logistique, .tracabilite, .production, .mediation, .sav, .dons, .stocks, .bilans {
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -50,11 +101,94 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  background-color: #555;
   color: #fff;
   text-decoration: none;
+  width: 100px;
+  height: 100px;
 }
+
+@media (min-width: 950px) {
+  .tiles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logistique, .tracabilite, .production, .mediation, .sav, .dons, .stocks, .bilans {
+    flex-direction: column;
+    width: 15%;
+  }
+}
+
+.logistique .tile1, .mediation .tile1, .sav .tile1, .dons .tile1, .bilans .tile1 {
+  background-color: #e57373;
+}
+
+.logistique .tile2, .tracabilite .tile2, .mediation .tile2, .sav .tile2, .dons .tile2, .bilans .tile2 {
+  background-color: #f06292;
+}
+
+.logistique .tile3, .tracabilite .tile3, .mediation .tile3, .sav .tile3, .dons .tile3, .bilans .tile3 {
+  background-color: #ba68c8;
+}
+
+.production .tile4 {
+  background-color: #9575cd;
+}
+
+.production .tile5 {
+  background-color: #7986cb;
+}
+
+.stocks .tile6 {
+  background-color: #64b5f6;
+}
+
+.stocks .tile7 {
+  background-color: #4fc3f7;
+}
+
+.stocks .tile8 {
+  background-color: #4dd0e1;
+}
+
+.stocks .tile9 {
+  background-color: #4db6ac;
+}
+
+.stocks .tile10 {
+  background-color: #81c784;
+}
+
+.stocks .tile11 {
+  background-color: #aed581;
+}
+
+.stocks .tile12 {
+  background-color: #dce775;
+}
+
+.stocks .tile13 {
+  background-color: #fff176;
+}
+
+.stocks .tile14 {
+  background-color: #ffd54f;
+}
+
+.tile15 { background-color: #ffb74d; }
+.tile16 { background-color: #ff8a65; }
+.tile17 { background-color: #a1887f; }
+.tile18 { background-color: #90a4ae; }
+.tile19 { background-color: #f44336; }
+.tile20 { background-color: #e91e63; }
+.tile21 { background-color: #9c27b0; }
+.tile22 { background-color: #673ab7; }
+.tile23 { background-color: #3f51b5; }
+.tile24 { background-color: #2196f3; }
+.tile25 { background-color: #03a9f4; }
+.tile26 { background-color: #00bcd4; }
+.tile27 { background-color: #009688; }
+.tile28 { background-color: #4caf50; }
 
 footer {
   display: flex;
@@ -83,10 +217,9 @@ footer {
 }
 
 .dark .tile {
-  background-color: #555;
+  color: #fff;
 }
 
 .light .tile {
-  background-color: #ddd;
   color: #000;
 }
