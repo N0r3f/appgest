@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #444;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.menu-hamburger {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #444;
+  color: #fff;
+  position: sticky;
+  bottom: 0;
+}
+
+.toggle-dark-mode {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.dark header, .dark footer {
+  background-color: #444;
+}
+
+.light header, .light footer {
+  background-color: #eee;
+  color: #000;
+}
+
+.dark .tile {
+  background-color: #555;
+}
+
+.light .tile {
+  background-color: #ddd;
+  color: #000;
+}
