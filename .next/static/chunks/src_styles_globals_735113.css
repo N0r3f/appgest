@@ -44,7 +44,9 @@ main {
 .tiles {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 .tiles h2 {
@@ -103,9 +105,11 @@ main {
   justify-content: center;
   align-items: center;
   color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
   text-decoration: none;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 }
 
 @media (width >= 950px) {
@@ -114,13 +118,19 @@ main {
     flex-wrap: wrap;
   }
 
-  .logistique, .tracabilite, .production, .mediation, .sav, .dons, .stocks, .bilans {
+  .logistique, .tracabilite, .production, .mediation, .sav, .dons, .bilans {
     flex-direction: column;
-    width: 15%;
+    width: 150px;
+  }
+
+  .stocks {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 94vw;
   }
 }
 
-.logistique .tile1, .mediation .tile1, .sav .tile1, .dons .tile1, .bilans .tile1 {
+.logistique .tile1, .tracabilite .tile1, .production .tile1, .mediation .tile1, .sav .tile1, .dons .tile1, .bilans .tile1 {
   background-color: #e57373;
 }
 
@@ -264,6 +274,20 @@ footer {
 
 .light .tile {
   color: #000;
+}
+
+.tile-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tile {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #0000001a;
 }
 
 /*# sourceMappingURL=src_styles_globals_735113.css.map*/
