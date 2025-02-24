@@ -7,7 +7,7 @@ export default function Logistique() {
       <div className="logistique">
         <Link href="/themes/Logistique/entrees" legacyBehavior><a className="tile tile2">Entrées</a></Link>
         <Link href="/themes/Logistique/sorties" legacyBehavior><a className="tile tile3">Sorties</a></Link>
-        <Link href="/themes/Logistique/calendrier" legacyBehavior><a className="tile tile1">Calendrier</a></Link>
+        <Link href="/themes/Logistique/calendrier" legacyBehavior><a className="tile tile1">Agenda</a></Link>
       </div>
     </div>
   );

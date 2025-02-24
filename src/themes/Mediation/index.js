@@ -7,7 +7,7 @@ export default function Mediation() {
       <div className="mediation">
         <Link href="/themes/Mediation/entrees" legacyBehavior><a className="tile tile2">Entrées</a></Link>
         <Link href="/themes/Mediation/sorties" legacyBehavior><a className="tile tile3">Sorties</a></Link>
-        <Link href="/themes/Mediation/calendrier" legacyBehavior><a className="tile tile1">Calendrier</a></Link>
+        <Link href="/themes/Mediation/calendrier" legacyBehavior><a className="tile tile1">Agenda</a></Link>
       </div>
     </div>
   );

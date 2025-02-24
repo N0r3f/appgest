@@ -36,6 +36,22 @@ header h1 {
   font-size: 1.5rem;
 }
 
+.menu {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 110px);
+  background-color: #61598f;
+  border-radius: 0;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
 main {
   flex: 1;
   padding: 1rem;
@@ -46,14 +62,14 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 1.5rem;
+  width: 100%;
+  box-shadow: 0 4px 8px #0000001a;
 }
 
 .tiles h2 {
   margin: 0;
   padding: .5rem;
-  background-color: #222;
-  color: #fff;
   margin-bottom: 1rem;
 }
 
@@ -63,35 +79,35 @@ main {
 }
 
 .logistique-container {
-  background-color: #ffebee;
+  background-color: #45454533;
 }
 
 .tracabilite-container {
-  background-color: #fce4ec;
+  background-color: #45454533;
 }
 
 .production-container {
-  background-color: #f3e5f5;
+  background-color: #45454533;
 }
 
 .mediation-container {
-  background-color: #ede7f6;
+  background-color: #45454533;
 }
 
 .sav-container {
-  background-color: #e8eaf6;
+  background-color: #45454533;
 }
 
 .dons-container {
-  background-color: #e3f2fd;
+  background-color: #45454533;
 }
 
 .stocks-container {
-  background-color: #e0f7fa;
+  background-color: #45454533;
 }
 
 .bilans-container {
-  background-color: #e0f2f1;
+  background-color: #45454533;
 }
 
 .logistique, .tracabilite, .production, .mediation, .sav, .dons, .stocks, .bilans {
@@ -104,12 +120,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
-  width: 120px;
-  height: 120px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.tile:hover {
+  filter: saturate(.9) brightness(1.2);
+  transform: scale(1.01);
+  transition: all .2s ease-in-out;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
 
 @media (width >= 950px) {
@@ -118,9 +141,12 @@ main {
     flex-wrap: wrap;
   }
 
+  .logistique-container, .tracabilite-container, .production-container, .mediation-container, .sav-container, .dons-container, .bilans-container {
+    width: 11.1111vw;
+  }
+
   .logistique, .tracabilite, .production, .mediation, .sav, .dons, .bilans {
     flex-direction: column;
-    width: 150px;
   }
 
   .stocks {
@@ -132,14 +158,41 @@ main {
 
 .logistique .tile1, .tracabilite .tile1, .production .tile1, .mediation .tile1, .sav .tile1, .dons .tile1, .bilans .tile1 {
   background-color: #e57373;
+  color: var(--foreground);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #0000001a;
+  margin: 0;
+  aspect-ratio: 1;
 }
 
 .logistique .tile2, .tracabilite .tile2, .mediation .tile2, .sav .tile2, .dons .tile2, .bilans .tile2 {
   background-color: #f06292;
+  color: var(--foreground);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #0000001a;
+  margin: 0;
+  aspect-ratio: 1;
 }
 
 .logistique .tile3, .tracabilite .tile3, .mediation .tile3, .sav .tile3, .dons .tile3, .bilans .tile3 {
   background-color: #ba68c8;
+  color: var(--foreground);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #0000001a;
+  margin: 0;
+  aspect-ratio: 1;
+}
+
+.production .tile4, .production .tile5, .stocks .tile6, .stocks .tile7, .stocks .tile8, .stocks .tile9, .stocks .tile10, .stocks .tile11, .stocks .tile12, .stocks .tile13, .stocks .tile14, .tile15, .tile16, .tile17, .tile18, .tile19, .tile20, .tile21, .tile22, .tile23, .tile24, .tile25, .tile26, .tile27, .tile28 {
+  color: var(--foreground);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #0000001a;
+  margin: 0;
+  aspect-ratio: 1;
 }
 
 .production .tile4 {
@@ -277,17 +330,94 @@ footer {
 }
 
 .tile-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.tile {
-  background-color: var(--background);
+.tile-list > .tile {
+  width: inherit;
+  height: inherit;
   color: var(--foreground);
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px #0000001a;
+  margin: 0;
+  aspect-ratio: 1;
+  z-index: 1;
+}
+
+.tile-list > .tile:hover {
+  filter: saturate(.9) brightness(1.2);
+  transform: scale(1.01);
+  transition: all .2s ease-in-out;
+  font-weight: bolder;
+  font-size: 1.5em;
+  box-shadow: 0 4px 8px #0000001a;
+  z-index: 2;
+}
+
+.tile1 {
+  background-color: #e57373;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.tile2 {
+  background-color: #f06292;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.tile3 {
+  background-color: #ba68c8;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.tile4 {
+  background-color: #9575cd;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.tile5 {
+  background-color: #7986cb;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.tile6 {
+  background-color: #64b5f6;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.tile7 {
+  background-color: #4fc3f7;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.tile8 {
+  background-color: #4dd0e1;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.tile9 {
+  background-color: #4db6ac;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.tile10 {
+  background-color: #81c784;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.tile11 {
+  background-color: #ffb74d;
 }
 
 

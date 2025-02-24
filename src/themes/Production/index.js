@@ -7,7 +7,7 @@ export default function Production() {
       <div className="production">
         <Link href="/themes/Production/fiches" legacyBehavior><a className="tile tile4">Fiches</a></Link>
         <Link href="/themes/Production/bilans" legacyBehavior><a className="tile tile5">Bilans</a></Link>
-        <Link href="/themes/Production/calendrier" legacyBehavior><a className="tile tile1">Calendrier</a></Link>
+        <Link href="/themes/Production/calendrier" legacyBehavior><a className="tile tile1">Agenda</a></Link>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ export default function Dons() {
       <div className="dons">
         <Link href="/themes/Dons/entrees" legacyBehavior><a className="tile tile2">Entrées</a></Link>
         <Link href="/themes/Dons/sorties" legacyBehavior><a className="tile tile3">Sorties</a></Link>
-        <Link href="/themes/Dons/calendrier" legacyBehavior><a className="tile tile1">Calendrier</a></Link>
+        <Link href="/themes/Dons/calendrier" legacyBehavior><a className="tile tile1">Agenda</a></Link>
       </div>
     </div>
   );

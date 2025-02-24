@@ -7,7 +7,7 @@ export default function Tracabilite() {
       <div className="tracabilite">
         <Link href="/themes/Tracabilite/entrees" legacyBehavior><a className="tile tile2">Entrées</a></Link>
         <Link href="/themes/Tracabilite/sorties" legacyBehavior><a className="tile tile3">Sorties</a></Link>
-        <Link href="/themes/Tracabilite/calendrier" legacyBehavior><a className="tile tile1">Calendrier</a></Link>
+        <Link href="/themes/Tracabilite/calendrier" legacyBehavior><a className="tile tile1">Agenda</a></Link>
       </div>
     </div>
   );

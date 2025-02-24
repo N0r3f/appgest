@@ -7,7 +7,7 @@ export default function Bilans() {
       <div className="bilans">
         <Link href="/themes/Bilans/entrees" legacyBehavior><a className="tile tile2">Entrées</a></Link>
         <Link href="/themes/Bilans/sorties" legacyBehavior><a className="tile tile3">Sorties</a></Link>
-        <Link href="/themes/Bilans/calendrier" legacyBehavior><a className="tile tile1">Calendrier</a></Link>
+        <Link href="/themes/Bilans/calendrier" legacyBehavior><a className="tile tile1">Agenda</a></Link>
       </div>
     </div>
   );

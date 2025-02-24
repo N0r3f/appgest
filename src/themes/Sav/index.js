@@ -7,7 +7,7 @@ export default function Sav() {
       <div className="sav">
         <Link href="/themes/Sav/entrees" legacyBehavior><a className="tile tile2">Entrées</a></Link>
         <Link href="/themes/Sav/sorties" legacyBehavior><a className="tile tile3">Sorties</a></Link>
-        <Link href="/themes/Sav/calendrier" legacyBehavior><a className="tile tile1">Calendrier</a></Link>
+        <Link href="/themes/Sav/calendrier" legacyBehavior><a className="tile tile1">Agenda</a></Link>
       </div>
     </div>
   );

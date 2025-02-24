@@ -613,7 +613,7 @@ function Logistique() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile1",
-                            children: "Calendrier"
+                            children: "Agenda"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Logistique/index.js",
                             lineNumber: 10,
@@ -708,7 +708,7 @@ function Tracabilite() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile1",
-                            children: "Calendrier"
+                            children: "Agenda"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Tracabilite/index.js",
                             lineNumber: 10,
@@ -803,7 +803,7 @@ function Production() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile1",
-                            children: "Calendrier"
+                            children: "Agenda"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Production/index.js",
                             lineNumber: 10,
@@ -898,7 +898,7 @@ function Mediation() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile1",
-                            children: "Calendrier"
+                            children: "Agenda"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Mediation/index.js",
                             lineNumber: 10,
@@ -993,7 +993,7 @@ function Sav() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile1",
-                            children: "Calendrier"
+                            children: "Agenda"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Sav/index.js",
                             lineNumber: 10,
@@ -1088,7 +1088,7 @@ function Dons() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile1",
-                            children: "Calendrier"
+                            children: "Agenda"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Dons/index.js",
                             lineNumber: 10,
@@ -1151,7 +1151,7 @@ function Stocks() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile6",
-                            children: "Sécurité"
+                            children: "Sécu"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Stocks/index.js",
                             lineNumber: 8,
@@ -1183,7 +1183,7 @@ function Stocks() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile8",
-                            children: "Saisonnier"
+                            children: "Saison"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Stocks/index.js",
                             lineNumber: 10,
@@ -1215,7 +1215,7 @@ function Stocks() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile10",
-                            children: "Spéculatif"
+                            children: "Spécu"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Stocks/index.js",
                             lineNumber: 12,
@@ -1231,7 +1231,7 @@ function Stocks() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile11",
-                            children: "Cyclique"
+                            children: "Cycle"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Stocks/index.js",
                             lineNumber: 13,
@@ -1374,7 +1374,7 @@ function Bilans() {
                         legacyBehavior: true,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "tile tile1",
-                            children: "Calendrier"
+                            children: "Agenda"
                         }, void 0, false, {
                             fileName: "[project]/src/themes/Bilans/index.js",
                             lineNumber: 10,
