@@ -150,8 +150,22 @@ main {
   .stocks {
     flex-direction: row;
     justify-content: space-around;
-    width: 94vw;
+    width: 96.5vw;
   }
+
+  .stocks .tile6,
+  .stocks .tile7,
+  .stocks .tile8,
+  .stocks .tile9, 
+  .stocks .tile10,
+  .stocks .tile11,
+  .stocks .tile12,
+  .stocks .tile13,
+  .stocks .tile14 {
+    width: calc(100% /12);
+    height: 80px;
+  }
+
 }
 
 .logistique .tile1, .tracabilite .tile1, .production .tile1, .mediation .tile1, .sav .tile1, .dons .tile1, .bilans .tile1 {
@@ -293,20 +307,20 @@ footer {
 }
 
 .dark header, .dark footer {
-  background-color: #444;
+  background-color: #333;
 }
 
 .light header, .light footer {
   background-color: #eee;
-  color: #000;
+  color: #333;
 }
 
 .dark .tile {
-  color: #fff;
+  color: #eee;
 }
 
 .light .tile {
-  color: #000;
+  color: #333;
 }
 
 .tile-list {
