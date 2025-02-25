@@ -8,20 +8,20 @@ body {
 
 .dark {
   background-color: #333;
-  color: #fff;
+  color: #eee;
 }
 
 .light {
-  background-color: #fff;
-  color: #000;
+  background-color: #eee;
+  color: #333;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #444;
-  color: #fff;
+  background-color: #333;
+  color: #eee;
 }
 
 header h1 {
@@ -46,7 +46,6 @@ header h1 {
   left: 0;
   width: 100%;
   height: calc(100vh - 110px);
-  background-color: #61598f;
   border-radius: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -135,6 +134,17 @@ main {
 }
 
 @media (min-width: 950px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   .tiles {
     flex-direction: row;
     flex-wrap: wrap;
